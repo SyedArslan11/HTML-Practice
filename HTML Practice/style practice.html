@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Tags</title>
+    <script>
+        function setTheme(){
+            var objSpan= document.getElementById("s1");
+            var objSpan2= document.getElementById("s2");
+            objSpan.style="color: Red";
+            objSpan2.style="color: purple";
+        }
+        function setTheme2(){
+            var objSpan= document.getElementById("s1");
+            var objSpan2= document.getElementById("s2");
+            objSpan.style="color: gray";
+            objSpan2.style="color: black";
+
+        }
+        function setTheme3(){
+            var objSpan= document.getElementById("s1");
+            var objSpan2= document.getElementById("s2");
+            objSpan.style="color: green";
+            objSpan2.style="color: silver";
+        }
+    </script>
+</head>
+
+
+
+<body>
+    <h1>Theme challange</h1>
+    <br><br>
+    <h1><span id="s1" style="color: gold;">PickUp</span><span id="s2" style="color: black;">Biz</span></h1>
+    <br>
+    <button onclick="setTheme()">Theme 1</button>
+    <button onclick="setTheme2()">Theme 2</button>
+    <button onclick="setTheme3()">Theme 3</button>
+    <br>
+    <h1></h1>
+ 
+
+
+
+</body>
+</html>
