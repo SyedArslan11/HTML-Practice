@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setStoreValues(){
+            sessionStorage.setItem("userName",document.getElementById("name").value);
+            sessionStorage.setItem("userPassword",document.getElementById("password").value);
+        }
+        function getStoreValues(){
+
+            document.getElementById("name").value
+        }
+
+    </script>
+    <style>
+        form {
+
+
+            text-align: left;
+
+
+        }
+
+        .samer {
+            background: silver;
+            padding: 15px 25px;
+            color: #333;
+        }
+
+        #container {
+            margin: auto;
+            max-width: 1000px;
+            padding: 40px;
+        }
+
+        .arsalan {
+            background-color: red;
+        }
+
+        .aaquib {
+            background-color: royalblue;
+        }
+
+        .umair {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container" class="samer">
+        <form style="margin: auto;">
+            <div class="arsalan">
+                <h1 class="umair">Form</h1>
+            </div>
+            <div class="aaquib">
+                <label>Name:</label>
+
+                <input type="text" placeholder="Enter Username" style="background-color: white;" id="name">
+
+            </div>
+            <br><br>
+            <label>Password:</label>
+
+            <input type="password" placeholder="Enter Password" id="password">
+            <br><br>
+            <label>Gender</label>
+            <br>
+            <input type="radio" value="male" name="gender">Male
+            <br>
+            <input type="radio" value="Female" name="gender">Female
+            <br><br>
+            <label>Hobbies</label>
+            <br>
+            <input type="checkbox" name="Reading">Reading
+            <input type="checkbox" name="Driving">Driving
+            <input type="checkbox" name="Working">Working
+            <br>
+            <input type="checkbox" name="Stocks Trader">Strock Trader
+            <input type="checkbox" name="Part time Coaching">Part Time Coaching
+            <br><br>
+            <label>Age In Between:</label><br>
+            <input type="radio" value="12-18" name="Age">12-18 <br>
+            <input type="radio" value="19-25" name="Age">19-25 <br>
+            <input type="radio" value="26-32" name="Age">26-32 <br>
+            <input type="radio" value="33-45" name="Age">33-45 <br><br>
+            <label>D.O.B:</label><br>
+            <input type="date">
+            <br><br>
+            <button onclick="setStoreValues()">Sign-Up</button>
+            <button>Clear</button>
+        </form>
+    </div>
+
+</body>
+ <script>getStorageValues()</script>
+</html>
