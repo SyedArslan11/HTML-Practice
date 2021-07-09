@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+<style type="text/css">
+label{
+    width: 120px;
+    display:inline-block;
+}
+    
+</style>
+  <body>
+    <h1>Form</h1>
+    <br /><br />
+    <hr />
+    <br />
+    <label>Email/UserName:</label>
+    <input type="text" placeholder="Enter Username or Email" id="name" />
+    <br /><br />
+    <label>Password:</label>
+    <input type="password" placeholder="Enter Password" id="password" />
+    <br /><br />
+    <label>Gneder:</label>
+    <input type="radio" name="Gender" value="Male" />Male
+    <input type="radio" name="Gender" value="Female" />Female <br /><br />
+    <label>Age In Between:</label><br /><br>
+    <input type="radio" name="Age" value="16-25" />16-25 <br />
+    <input type="radio" name="Age" value="26-35" />26-35 <br />
+    <input type="radio" name="Age" value="36-45" />36-45 <br />
+    <input type="radio" name="Age" value="46-55" />46-55 <br />
+    <br /><br />
+    <label>D.O.B:</label>
+    <input type="date" /><br /><br />
+    <label>Favorite Color:</label>
+    <input type="color" id="favcolor" />
+    <br /><br />
+    <button onclick="setStoreValues()">Sign-Up</button>
+    <button>Clear</button>
+  </body>
+</html>
