@@ -1,0 +1,39 @@
+nav{
+    background-color: crimson;
+    padding: 25px;
+    border-radius: 10px;
+    
+}
+a{
+    text-decoration: none;
+    color: cyan;
+    padding: 10px;
+    
+}
+a:hover{
+    color: black;
+    background-color: rgb(21, 176, 182);
+}
+
+/*----------------Dropdown first------*/
+
+.dropdown1 a{
+    display: block;
+    }    
+.dropdown1{ 
+       display: inline-block;
+}
+.dropdownlist{
+
+    position: absolute;
+    padding: 5px;
+    width: 200px;
+    display: none;
+
+}
+.dropdown1:hover .dropdownlist{
+    display: block;
+    text-align: center;
+    background-color: darkblue;
+    border-radius: 20px;
+}
