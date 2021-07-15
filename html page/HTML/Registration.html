@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <script>
+      function savedata(){
+          var objName = document.getElementById("name");
+          localStorage.setItem("setName", objName.value);
+          var objEmail= document.getElementById("email");
+          localStorage.setItem("setEmail", objEmail.value);
+          var objPassword= document.getElementById("password");
+          localStorage.setItem("setPassword",objPassword.value);
+      }
+      function readdata(){
+        
+      }
+  </script>
+  <style>
+    .label1 {
+      width: 80px;
+      display: inline-block;
+    }
+    body {
+      background-image: url(./veneno.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      
+    }
+    form {
+      text-align: center;
+    }
+    .box {
+      background: rgba(6, 7, 7, 0.877);
+      padding: 5px 5px;
+      color: rgb(255, 255, 255);
+    }
+    #container {
+      margin: auto;
+      max-width: 400px;
+      padding: 40px;
+    }
+  </style>
+  <body>
+      
+    <div id="container" class="box">
+      <form>
+        <h1 style="color: rgb(10, 80, 126)">Register Now</h1>
+        <br /><br /><br />
+        <label class="label1" style="color: red">Name:</label>
+        <input type="text" placeholder="Enter Username" id="name"/><br /><br />
+        <label class="label1" style="color: red">Email:</label>
+        <input type="text" placeholder="Enter Email" id="email"/><br /><br />
+        <label class="label1" style="color: red">Password:</label>
+        <input type="password" placeholder="Enter Password" id="password"/><br /><br />
+        <label class="label1" style="color: red">Gender:</label>
+        <input type="radio" value="Male" name="Gender" />Male
+        <input type="radio" value="Female" name="Gender" />Female <br /><br />
+        <label class="label1" style="color: red">Hobbies:</label>
+        <input type="checkbox" name="Gaming" />Gaming
+        <input type="checkbox" name="Reading" />Reading <br />
+        <input type="checkbox" name="Sports(out doors)" />Sports(out doors)
+        <input type="checkbox" name="Working" />Working <br />
+        <input type="checkbox" name="sales" />Sales & Marketing
+        <input type="checkbox" name="Famil Guy" />Family Guy <br />
+        <br />
+        <label style="color: red">Weekly Time You Spent on Mobile/PC:</label
+        ><br /><br />
+        <input type="radio" name="time" value="2-4" />2-4 Hours<br />
+        <input type="radio" name="time" value="5-8" />5-8 Hours<br />
+        <input type="radio" name="time" value="8-28" />8-28 Hours<br />
+        <input type="radio" name="time" value="28-46" />28-46 Hours<br />
+        <input type="radio" name="time" value="46-72" />46-72 Hours<br />
+        <input type="radio" name="time" value="24x7" />24x7 Stays Onine<br /><br />
+        <label style="color: red">D.O.B.</label>
+        <input type="date" /><br /><br />
+        <button onclick="savedata()">Join</button>
+        <div class="txtcolor"></div>
+      </form>
+    </div>
+  </body>
+</html>

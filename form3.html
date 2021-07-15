@@ -6,14 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
 <style type="text/css">
 label{
     width: 120px;
     display:inline-block;
 }
+
     
 </style>
-  <body>
+<script>
+  function saveData(){
+    var objColor = document.getElementById("myColor");
+    sessionStorage.setItem("favColor", objColor.value)
+  }
+
+  function readData(){
+    var objColor = document.getElementById("myColor")
+    objColor.value= sessionStorage.getItem("favColor");
+    var objBody= document.getElementById("body");
+    sessionStorage.getItem("bodyclr", objBody.value);
+    document.getElementById("body").style=`background-color: ${sessionStorage.getItem("favColor")}`
+    
+  }
+
+
+
+    
+</script>
+  <body id="body">
     <h1>Form</h1>
     <br /><br />
     <hr />
@@ -36,9 +57,12 @@ label{
     <label>D.O.B:</label>
     <input type="date" /><br /><br />
     <label>Favorite Color:</label>
-    <input type="color" id="favcolor" />
+    <input type="color" id="myColor"/>
     <br /><br />
-    <button onclick="setStoreValues()">Sign-Up</button>
+    <button onclick="saveData()">Sign-Up</button>
     <button>Clear</button>
   </body>
+  <script>
+    readData()
+  </script>
 </html>
