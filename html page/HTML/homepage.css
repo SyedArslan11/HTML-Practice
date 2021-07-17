@@ -8,9 +8,6 @@ a {
 
     background-color: black;
 }
-
-
-
 .search {
     float: right;
 }
@@ -26,6 +23,9 @@ img {
     height: 500px;
 
 }
+.content{
+    background-color: red;
+}
 
 
 
@@ -34,14 +34,24 @@ img {
     color: rgb(255, 255, 255);
 }
 
-.body {
+body {
     
     background: linear-gradient(black, black, rgb(30, 115, 172))
 }
-.footer1{
+footer{
     background: rgb(255, 255, 255);
-    text-align: center;
-    padding: 100px;
+    /* text-align: center; */
+    /* padding: 100px; */
     
 
+}
+
+.mario{
+    height: 300px;
+    width: 400px;
+    float: right;
+}
+
+.firsttext{
+    float: left;
 }
